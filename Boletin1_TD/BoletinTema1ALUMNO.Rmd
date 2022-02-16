@@ -184,6 +184,11 @@ tail(cabbages)
 
 #4b
 sum(is.na(cabbages)) # 0 valores perdidos en el conjunto cabbages
+
+#4c
+head(Chile)
+dim(Chile)
+tail(Chile)
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
