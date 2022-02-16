@@ -123,37 +123,19 @@ d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los 
 commonAnimals<- intersect(mammals, Animals2)
 commonAnimals
 
-
-
-
 ```
 
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
 
 ```{r}
-
-
-
-
-
-
+setdiff(rownames(mammals), rownames(Animals2))
+setdiff(rownames(Animals2), rownames(mammals))
 ```
 
 e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
+#Como están escritos de difetente forma no salen en los dos conjuntos.
 ```
 
 2.  La funcion **qqPlot** del paquete **car** puede ser utilizada para determinar gráficamente si una serie de puntos siguen una distribución de datos Gaussiana. Si las muestras están dentro de las líneas discontinuas podemos indicar que siguen una distribución Gaussiana con un 95 % de confianza. Utilizando esta función representa el logaritmo neperiano (**log**) del peso del cerebro (**brain weigths**) del registro de datos **mammals** del paquete **MASS** y conjunto de datos **Animals2** de la librería **robustbase**. ¿Presentan el mismo comportamiento ?.¿Podríamos decir que siguen una distribución Gaussiana ?
