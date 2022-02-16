@@ -163,9 +163,8 @@ libReturn
 libReturn[1:5]
 head(libReturn, n = 5)
 
-
-
-
+#3c
+length(library()) # 3 Librerías
 
 
     ```
