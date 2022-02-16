@@ -244,19 +244,18 @@ plot(cabbages$VitC ~ cabbages$HeadWt)
 
 # Es fácil ver que no hay una recta que se adapte al modelo
 
+#7b
+plot(cabbages$VitC ~ cabbages$HeadWt, pch=c(1,18)[cabbages$Cult])
 
+modelo_c39<- lm(cabbages$VitC ~ cabbages$HeadWt, data = cabbages, subset = which(Cult == "c39"))
 
+modelo_c52<- lm(cabbages$VitC ~ cabbages$HeadWt, data = cabbages, subset = which(Cult == "c52"))
 
+abline(modelo_c39, lty = 3)
 
+abline(modelo_c52)
 
-
-
-
-
-
-
-
-
+# En el gráfico, los rombos sombreados representan c39, y los puntos blancos a c52
 ```
 
 c.  Usa **summary** con cada uno de los modelos obtenidos y observa **Coefficients**. Dado que hemos planteado un modelo $y=mx+n$, donde $y=VitC$ y $x=HeadWt$. La función **lm** nos permite obtener **(Intercept)**; **n** y la pendiente **HeadWt**; **m** (además de otros parámetros adicionales que evalúan la caracterísiticas del modelo). Observa que en todos los casos, la pendiene es negativa indicando que las calabazas de más peso contienen menos vitamina C. No te preocupes por el resto de parámetros del modelo, por el momento.
